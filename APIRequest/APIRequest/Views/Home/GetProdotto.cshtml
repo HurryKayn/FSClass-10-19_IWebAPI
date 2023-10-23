@@ -1,0 +1,44 @@
+﻿@model Prodotto
+@{
+    ViewData["title"] = "Richiesta Prodotto";
+}
+<h2> Richiesta Prodotto Da Id <a asp-action="Index" class="btn btn-sm  btn-secondary">Ritorna</a><h2>
+
+<br />
+
+<form method="post">
+    <div class="form-group">
+        <label for="id">ID:</label>
+        <input class="form-Control" name="id"/>
+    </div>
+    <div class="text-center panel-body">
+        <button type="submit" class="btn btn-sm btn-primary">Get Prodotto</button>
+    </div>
+
+</form>
+
+    @if(Model  !=null)
+    {
+        <h2>Prodotto</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Nome</td>
+                    <td>UM</td>
+                    <td>Quantità</td>
+                    <td>Prezzo</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.ProdottoId</td>
+                    <td>@Model.Nome</td>
+                    <td>@Model.UnitMisura</td>
+                    <td>@Model.Quantita</td>
+                    <td>@Model.Prezzo</td>
+                </tr>
+            </tbody>
+        </table>
+
+    }

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "o1vHVAiL2FNFJyaHxDWcmETpkCWl/YcrJDpOtR0PhPKT02uWfFpbs9+1zirxd+t9lMi9ZNPjkmtDZbq9vp65Gg==",
+  "success": true,
+  "projectFilePath": "D:\\Personal\\Programming\\vs22\\c2310_19\\WebApi\\WebApi\\WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marco\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\6.0.23\\microsoft.aspnetcore.jsonpatch.6.0.23.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\6.0.23\\microsoft.aspnetcore.mvc.newtonsoftjson.6.0.23.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\marco\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

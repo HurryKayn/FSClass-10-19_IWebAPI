@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Prodotto>
+
+@{
+    ViewData["Title"] = "Elenco Prodotti";
+}
+
+
+<h2>Elenco Prodotti</h2>
+
+<a asp-action="GetProdotto" class="btn btn-sm btn-primary">Vedi Singolo prodotto</a>
+<a asp-action="AddProdotto" class="btn btn-sm btn-secondary">Aggiungi Prodotto</a>
+<table class="table table-sm table-striped  table-bordered m-2">
+    <thead>
+        <tr>
+            <th>Prod.ID</th>
+            <th>Nome</th>
+            <th>UM</th>
+            <th>Quantita</th>
+            <th>Prezzo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProdottoId</td>
+                <td>@item.Nome</td>
+                <td>@item.UnitMisura</td>
+                <td>@item.Quantita</td>
+                <td>@item.Prezzo</td>
+            
+                <td> 
+                    <a asp-action="UpdateProdotto" asp-route-id="@item.ProdottoId">Aggiorna</a>
+                </td>
+                <td>
+                    <form asp-action="DeleteProdotto" mehod="post">
+                        <input type="hidden" value="@item.ProdottoId" name="id">
+                        <input type="image" src="/icon/close.png" />
+
+                    </form>
+                </td>
+
+            </tr>
+
+        }
+
+    </tbody>
+
+</table>
